@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Peoples Data</title>
+</head>
+<body>
+    <div class="fluid-container">
+        <div class="row">
+            <div class="col-sm-6">
+                <table id="table" class="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="heading">Add / Update Person Form</h4>
+
+                <form id="form" class="form" autocomplete="off">
+                        <span>Name</span>   
+                        <input type="text" id="name" maxlength="10"/>   <br>
+                        <span>Gender</span> 
+                            <input type="radio" id="male" name="gender" value="Male" checked>
+                            <label for="male" >Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="male">Female</label><br>
+                        <span>Age</span>    
+                        <input type="number" id="age">  <br>
+                        <span>City</span>   
+                            <select class="" id="city">
+                                <option value="Lahore">Lahore</option>
+                                <option value="Karachi">Karachi</option>
+                                <option value="Islamabad">Islamabad</option>
+                                <option value="Pindi">Pindi</option>
+                            </select>
+                </form>
+                
+                        <button class="btn btn-secondary" id="reset">Reset</button>
+                        <button class="btn btn-secondary" id="add">Add</button>
+                        <button class="btn btn-secondary" id="updateform" disabled>Update</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
